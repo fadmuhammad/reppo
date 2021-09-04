@@ -1,13 +1,30 @@
+  * {
+  box-sizing: border-box;
+  }
+
   li {
     list-style: none;
   }
 
   header{
-    height: 90px;
+    height: 65px;
+    width: 100%;
     background-color: white;
     color: black;
+    position : fixed;
     z-index: 10;
     top : 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 1300px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
   .header-left{
@@ -15,18 +32,41 @@
   }
 
  .logo{
-    width: 124px;
-    padding : 15px 40px;
+  width: 122px;
+  padding : 15px 5px;
   }
 
-  .header-list li{
+  .header-right {
     float: right;
-    padding: 33px 20px;
-    font-family: Noto Sans;
+    margin-right: 10px;
   }
-  .selected:hover{
-      color:#31CFBC;
-      transition: all 0.1s;
-      font-family: 'Noto Sans', sans-serif;
-      font-weight: bold;
+
+  .header-right a{
+    float: left;
+    line-height: 65px;
+    padding: 15px 20px;
+    font-family: 'Noto Sans';
+    display: block;
+    color:black;
+    transition: all 0.5s;
+  }
+
+  .header-right a:hover{
+    color:#31CFBC;
+    transition: all 0.1s;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+    cursor: default;
+  }
+  
+  .menu-icon {
+    color: black;
+    float: right;
+    font-size: 30px;
+    padding: 35px 30px;
+    display: none;
+  }
+
+  .fa {
+    margin-right: 5px;
   }
