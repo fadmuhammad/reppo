@@ -1,0 +1,32 @@
+  li {
+    list-style: none;
+  }
+
+  header{
+    height: 90px;
+    background-color: white;
+    color: black;
+    z-index: 10;
+    top : 0;
+  }
+
+  .header-left{
+    float: left;
+  }
+
+ .logo{
+    width: 124px;
+    padding : 15px 40px;
+  }
+
+  .header-list li{
+    float: right;
+    padding: 33px 20px;
+    font-family: Noto Sans;
+  }
+  .selected:hover{
+      color:#31CFBC;
+      transition: all 0.1s;
+      font-family: 'Noto Sans', sans-serif;
+      font-weight: bold;
+  }
